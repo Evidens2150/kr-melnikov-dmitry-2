@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>svg animation</title>
+  </head>
+  <body>
+    <header class="header container">
+  <a class="header__logo" href="/" aria-label="Company Logo">
+      <object type="image/svg+xml" data="images/cat.svg">
+        <img src="/static/images/logo.svg" alt="Company Logo">
+      </object>
+  </a>
+  <nav class="header__nav">
+    <ul class="header__nav__list">
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="/pages/blog"
+  >
+    blog
+  </a>
+</li> 
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="/pages/catalog"
+  >
+    catalog
+  </a>
+</li>
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="#"
+  >
+    about us
+  </a>
+</li>
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="/pages/animation-scene"
+  >
+    animation
+  </a>
+</li>
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="/pages/svg-animation"
+  >
+    svg
+  </a>
+</li>
+      <li class="header__list-item">
+  <a
+    class="header__link @@class"
+    href="/pages/grid"
+  >
+    grid
+  </a>
+</li>
+    </ul>
+  </nav>  
+  <button class="button button_transparent header__link header__burger-button button-open-menu_js">menu</button>
+  <div class="mobile-menu">
+  <div class="mobile-menu__inner">
+  <ul class="mobile-menu__head-list">
+    <li class="mobile-menu__head-list__item">
+      <a class="mobile-menu__logo" href="/" aria-label="Company Logo">
+        <svg width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H7.60744C13.0705 0 16.9704 5.234 16.9704 10.1689V11.7333C16.9704 16.6681 13.0705 21.9022 7.60744 21.9022H0V0ZM15.8001 10.1689C15.8001 5.71711 12.271 1.17333 7.60744 1.17333H1.17037V20.7289H7.60744C12.271 20.7289 15.8001 16.1851 15.8001 11.7333V10.1689Z" fill="#1E0606"/>
+          <path d="M19.5063 0H20.6766V20.8267H26.9186V22H19.5063V0Z" fill="#1E0606"/>
+          <path d="M28.4791 0V21.9022H29.6495V11.5852L29.9368 11.2972L40.3571 21.9022H42L30.7644 10.4675L41.2055 0H39.5504L29.6495 9.92589V0H28.4791Z" fill="#1E0606"/>
+          </svg>
+      </a>
+    </li>
+      <li class="mobile-menu__head-list__item">
+      <button class="button button_transparent mobile-menu__button_search" aria-label="Search" >
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.4678 0C5.9598 0 3.92113 2.068 3.92113 4.59067C3.92113 5.66133 4.2878 6.62934 4.88914 7.42134L0.577137 11.7773C0.327803 12.0413 0.327803 12.452 0.577137 12.7013C0.709137 12.8333 0.870471 12.892 1.0318 12.892C1.2078 12.892 1.36913 12.8333 1.50113 12.7013L5.81314 8.33067C6.56114 8.87334 7.47047 9.18134 8.45314 9.18134C10.9611 9.18134 12.9998 7.11334 12.9998 4.59067C13.0145 2.05333 10.9758 0 8.4678 0ZM8.4678 8.02267C6.60513 8.02267 5.09447 6.48267 5.09447 4.59067C5.09447 2.69867 6.60513 1.15867 8.4678 1.15867C10.3305 1.15867 11.8411 2.69867 11.8411 4.59067C11.8411 6.48267 10.3305 8.02267 8.4678 8.02267ZM10.7411 4.64934C10.7118 4.89867 10.4918 5.08934 10.2425 5.08934C10.2131 5.08934 10.1985 5.08934 10.1691 5.08934C9.89047 5.04534 9.6998 4.796 9.72914 4.51733C9.8318 3.75467 8.98114 3.35867 8.93714 3.344C8.6878 3.22667 8.57047 2.91867 8.6878 2.66934C8.80513 2.42 9.09847 2.30267 9.36247 2.40534C9.42113 2.42 10.9465 3.124 10.7411 4.64934ZM9.67047 5.764C9.77314 5.86667 9.84647 6.02801 9.84647 6.17467C9.84647 6.33601 9.7878 6.48267 9.67047 6.58534C9.5678 6.68801 9.40647 6.76134 9.2598 6.76134C9.11314 6.76134 8.9518 6.70267 8.84914 6.58534C8.74647 6.48267 8.67314 6.32134 8.67314 6.17467C8.67314 6.02801 8.7318 5.86667 8.84914 5.764C8.9518 5.66133 9.11314 5.58801 9.2598 5.58801C9.40647 5.58801 9.55314 5.64667 9.67047 5.764Z" fill="#1E0606"/>
+          </svg>
+      </button>
+    </li>
+    </ul>
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/blog" class="mobile-menu__link">Blog</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/catalog" class="mobile-menu__link">Catalog</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/animation-scene" class="mobile-menu__link">Animation</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/svg-animation" class="mobile-menu__link">Svg</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/grid" class="mobile-menu__link">Grid</a>
+        </li>
+        <li class="mobile-menu__nav-list__item">
+          <a href="/pages/contact-us" class="mobile-menu__link mobile-menu__link_bold">Contact Us</a>
+        </li>
+      </ul>
+      <button
+    class="button button_transparent mobile-menu__button-close-menu button-close-menu_js"
+  >
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0.707105 0L0 0.707105L7.07111 7.77821L4.6869e-05 14.8493L0.707151 15.5564L7.77821 8.48532L14.8492 15.5563L15.5563 14.8492L8.48532 7.77821L15.5563 0.707178L14.8492 7.33696e-05L7.77821 7.07111L0.707105 0Z"
+        fill="#1E0606"
+      />
+    </svg>
+  </button>
+  </div>
+</div>
+
+  <ul class="header__contacts">
+    <li class="header__list-item">
+      <button class="button button_transparent header__button_search" aria-label="Search" >
+        <img src="/static/images/search.png" alt="Search"/>
+      </button>
+    </li>
+    <li class="header__list-item">
+  <a
+    class="header__link header__link_last"
+    href="/pages/contact-us"
+  >
+    contact us
+  </a>
+</li>
+  </ul>
+</header>
+
+    <main>
+      <section class="path container">
+        <h1 class="path__title">
+          svg animation
+        </h1>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            
+<li class="breadcrumbs__list__item">
+  <a href="/" class="breadcrumbs__link @@class">
+    <span>Home</span>
+  </a>
+</li>
+ 
+
+ 
+             
+
+<li class="breadcrumbs__list__item breadcrumbs__svg">
+  <object type="image/svg+xml" data="images/cat.svg">
+    <img src="/static/images/bread-arrow.svg" alt="Arrow to right">
+  </object>
+</li>
+
+
+            
+<li class="breadcrumbs__list__item">
+  <a href="/pages/svg-animation" class="breadcrumbs__link breadcrumbs__link_active">
+    <span>SVG</span>
+  </a>
+</li>
+ 
+
+
+          </ul>
+        </div>
+      </section>
+      <section class="svg container">
+        <svg class="svg__box" width="458" height="391" viewBox="20 -20 458 391" fill="none" xmlns="http://www.w3.org/2000/svg">                   
+          <rect x="42" y="46.9999" width="187" height="324" fill="#656D78"/>
+          <g class="svg__text">
+          <path class="svg__text__stroke-13" d="M67 343H109" stroke="#5D9CEC" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-12" d="M80 316L176 316" stroke="#A0D468" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-11" d="M94 289H156" stroke="#ED5565" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-10" d="M107 262H196" stroke="#FFCE54" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-9" d="M107 228C103.134 228 100 231.134 100 235C100 238.866 103.134 242 107 242V228ZM107 242H229V228H107V242Z" fill="#CCD1D9"/>
+          <path class="svg__text__stroke-8" d="M154 201C150.134 201 147 204.134 147 208C147 211.866 150.134 215 154 215V201ZM154 215H229V201H154V215Z" fill="#CCD1D9"/>
+          <path class="svg__text__stroke-7" d="M107 208H129" stroke="#CCD1D9" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-6" d="M107 181H183" stroke="#CCD1D9" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-5" d="M107 148C103.134 148 100 151.134 100 155C100 158.866 103.134 162 107 162V148ZM107 162H229V148H107V162Z" fill="#FFCE54"/>
+          <path class="svg__text__stroke-4" d="M148 121C144.134 121 141 124.134 141 128C141 131.866 144.134 135 148 135V121ZM148 135H229V121H148V135Z" fill="#ED5565"/>
+          <path class="svg__text__stroke-3" d="M94 128H122" stroke="#ED5565" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-2" d="M80 101L210 101" stroke="#A0D468" stroke-width="14" stroke-linecap="round"/>
+          <path class="svg__text__stroke-1" d="M67 73.9999L196 73.9999" stroke="#5D9CEC" stroke-width="14" stroke-linecap="round"/>
+          </g>    
+          <rect x="229" y="46.9999" width="209" height="324" fill="#E6E9ED"/>      
+          <g class="svg__picture-top">          
+          <path class="svg__picture-top__sky" d="M229 66.9999H411C414.866 66.9999 418 70.1339 418 73.9999V182C418 185.866 414.866 189 411 189H229V66.9999Z" fill="#5D9CEC"/>         
+          <path class="svg__picture-top__mountain-1" d="M296 133C296.436 133 297.463 132.959 298.927 134.474L348.5 189L246 189L293.167 134.474C294.537 132.959 295.564 133 296 133Z" fill="#545C66"/>
+          <path class="svg__picture-top__mountain-2" d="M343 113C343.595 113 345 112.944 347 115L405.5 189H282.5L339.128 115C341 112.944 342.405 113 343 113Z" fill="#656D78"/>
+          </g>
+          <g class="svg__picture-bottom">
+          <rect class="svg__picture-bottom__sky" x="249" y="208" width="169" height="88" rx="5" fill="#5D9CEC"/>
+          <circle class="svg__picture-bottom__sun" cx="283" cy="235.5" r="11" fill="#FFCE54"/>
+          <path class="svg__picture-bottom__mountain-1" d="M326.5 254C327.095 254 329.25 254 331 256L358.5 296H293.5L322 256C323.75 254 325.905 254 326.5 254Z" fill="#545C66"/>
+          <path class="svg__picture-bottom__mountain-2" d="M363.5 241C364.095 241 366.25 241 368 243L406 296H320L359 243C360.75 241 362.905 241 363.5 241Z" fill="#656D78"/>
+          <path class="svg__picture-bottom__stroke-1" d="M255 309C251.134 309 248 312.134 248 316C248 319.866 251.134 323 255 323V309ZM411 323C414.866 323 418 319.866 418 316C418 312.134 414.866 309 411 309V323ZM255 323H411V309H255V323Z" fill="#CCD1D9"/>
+          <path class="svg__picture-bottom__stroke-2" d="M255 336C251.134 336 248 339.134 248 343C248 346.866 251.134 350 255 350V336ZM337 350C340.866 350 344 346.866 344 343C344 339.134 340.866 336 337 336V350ZM255 350H337V336H255V350Z" fill="#CCD1D9"/>
+          </g>
+          <rect x="20" y="46.9999" width="21" height="324" fill="#545C66"/>
+          <path d="M35 20H423C432.5 20 438 25.5 438 35V47H20V35C20 25.4999 25.5 20 35 20Z" fill="#CCD1D9"/>
+          <rect x="41" y="46.9999" width="1" height="324" fill="#6C747F"/> 
+          <defs>
+          <filter id="filter0_d" x="0" y="0" width="458" height="391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+          <feOffset/>
+          <feGaussianBlur stdDeviation="10"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          </defs>
+          </svg>          
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="footer__content">
+    <section class="footer__nav">
+      <h2 class="footer__title">Navigation</h2>
+      <ul class="footer__nav-list">
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">about us</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="/pages/blog">blog</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">design services</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">featured on</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">2018 holiday catalog</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">shop by designer</a>
+</li>        
+      </ul>
+    </section>
+    <section class="footer__customer">
+      <h2 class="footer__title">Customer Information</h2>
+      <ul class="footer__customer-list">
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="/pages/contact-us">Contact Us</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">Sale Exclusions</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">Shipping & Returns</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">Terms & Conditions</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">Privacy Policy</a>
+</li>
+        <li class="footer__list-item @@list-class">
+  <a class="footer__link @@class" href="#">Search</a>
+</li>
+      </ul>
+    </section>
+    <section class="footer__contact">
+      <h2 class="footer__title">Connect</h2>
+      <form class="footer__contact__form">
+        <input
+          type="email"
+          name="email"
+          class="footer__contact__form-email"
+          placeholder="Email"
+        />
+        
+
+
+  <button class="button footer__button" value="join">join</button>
+
+
+
+
+        
+      </form>
+      <ul class="footer__contact__list">
+        <li class="footer__contact__list-item">
+  <a class="footer__contact__link" href="#" aria-label="link to facebook">
+    <img
+      class="footer__contact__link-img"
+      src="/static/images/facebook.svg"
+      alt="facebook"
+      width="9"
+      height="16"
+  /></a>
+</li>
+        <li class="footer__contact__list-item">
+  <a class="footer__contact__link" href="#" aria-label="link to twitter">
+    <img
+      class="footer__contact__link-img"
+      src="/static/images/twitter.svg"
+      alt="twitter"
+      width="15"
+      height="13"
+  /></a>
+</li>
+        <li class="footer__contact__list-item">
+  <a class="footer__contact__link" href="#" aria-label="link to pinterest">
+    <img
+      class="footer__contact__link-img"
+      src="/static/images/pinterest.svg"
+      alt="pinterest"
+      width="16"
+      height="16"
+  /></a>
+</li>
+        <li class="footer__contact__list-item">
+  <a class="footer__contact__link" href="#" aria-label="link to instagram">
+    <img
+      class="footer__contact__link-img"
+      src="/static/images/instagram.svg"
+      alt="instagram"
+      width="16"
+      height="16"
+  /></a>
+</li>
+      </ul>
+    </section>
+  </div>
+  <section class="footer__additional">
+    <h2 class="footer__additional-title hidden">additional links</h2>
+    <ul class="footer__additional__list ">
+      <li class="footer__additional__list-item">
+        <div class="footer__rating">
+      <ol class="footer__rating__list">
+        <li class="footer__rating__list-title">
+          <a class="footer__link" href="#">Company Rating</a>
+        </li>
+        <li class="footer__rating__list-item" >
+          <button class="button button_transparent footer__rating__button">
+            <img
+              src="/static/images/star.png"
+              alt="One star"
+              width="14"
+              height="13"
+              aria-label="One star"
+            />
+          </button>
+        </li>
+        <li class="footer__rating__list-item" >
+          <button class="button button_transparent footer__rating__button">
+            <img
+              src="/static/images/star.png"
+              alt="Two star"
+              width="14"
+              height="13"
+              aria-label="Two star"
+            />
+          </button>
+        </li>
+        <li class="footer__rating__list-item">
+          <button class="button button_transparent footer__rating__button">
+            <img
+              src="/static/images/star.png"
+              alt="Three star"
+              width="14"
+              height="13"
+              aria-label="Three star"
+            />
+          </button>
+        </li>
+        <li class="footer__rating__list-item">
+          <button class="button button_transparent footer__rating__button">
+            <img
+              src="/static/images/star.png"
+              alt="Four star"
+              width="14"
+              height="13"
+              aria-label="Four star"
+            />
+          </button>
+        </li>
+        <li class="footer__rating__list-item">
+          <button class="button button_transparent footer__rating__button">
+            <img
+              src="/static/images/star.png"
+              alt="Five star"
+              width="14"
+              height="13"
+              aria-label="Five star"
+            />
+          </button>
+        </li>
+      </ol>
+        </div>
+      </li>
+      <li class="footer__list-item footer__additional__list-item">
+  <a class="footer__link @@class" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+</li>
+      <li class="footer__list-item footer__additional__list-item">
+  <a class="footer__link footer__link_gray" href="#">Web Design — Direct Line Development</a>
+</li>
+    </ul>
+  </section>
+</footer>
+
+
+    <script src="/static/images/mobile-menu.js"></script>
+  </body>
+</html>
